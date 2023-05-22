@@ -1,12 +1,12 @@
-radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber == "adelante") {
-        cuteBot.motors(60, 60)
+radio.onReceivedString(function (receivedString) {
+    if (receivedString == "adelante") {
+        cuteBot.motors(100, 100)
     }
-    if (receivedNumber == "derecha") {
-        cuteBot.motors(10, 40)
+    if (receivedString == "derecha") {
+        cuteBot.motors(70, 100)
     }
-    if (receivedNumber == "izquierda") {
-        cuteBot.motors(40, 10)
+    if (receivedString == "izquierda") {
+        cuteBot.motors(100, 70)
     }
 })
 basic.forever(function () {
